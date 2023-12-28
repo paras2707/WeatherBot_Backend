@@ -20,7 +20,7 @@ let OPENWEATHERMAP_API_KEY = process.env.OPENWEATHERMAP_API_KEY;
 const PORT = process.env.PORT || 3000;
 
 // -------------------Telegram Bot Functions ------------------- //
-const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: false });
 const storage = {};
 
 async function getSettings() {
